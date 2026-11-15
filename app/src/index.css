@@ -1,0 +1,5 @@
+@import 'tailwindcss';
+
+html, body, #root { height: 100%; margin: 0; }
+body { background: #05080f; color: #e6edf7; font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; }
+.ol-viewport { cursor: crosshair; }
