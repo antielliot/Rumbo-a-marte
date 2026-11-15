@@ -1,0 +1,13 @@
+{
+  "name": "rumbo-a-marte",
+  "private": true,
+  "description": "Mars Route + Rumbo Marte: rutas A* sobre el relieve real del cráter Gale con caminata, reloj, HUD y traje.",
+  "engines": { "node": ">=20.19" },
+  "scripts": {
+    "postinstall": "npm --prefix app install",
+    "dev": "npm --prefix app run dev --",
+    "build": "npm --prefix app run build",
+    "preview": "npm --prefix app run preview --",
+    "test": "npm --prefix app test"
+  }
+}

@@ -2,7 +2,20 @@
 
 Proyecto del equipo para el NASA Space Apps Hackathon (reto *Interplanetary Survival Guide: Martian Map*). Es el motor de rutas **Mars Route** sobre el relieve real del cráter Gale, con la capa de caminata de **Rumbo Marte**: reloj OLED de 4 botones, visor HUD, seguridad (radiación, clima espacial, margen de regreso) y evaluación del traje.
 
-Para abrirlo en Visual Studio Code: clona el repo, abre la carpeta y en la terminal `cd app && npm install && npm run dev` (o usa `install` e `iniciar` en la raíz). Detalle de lo que se combinó: `Agents/CAMBIOS.md`.
+## Cómo correrlo
+
+**En Visual Studio Code** (Node 20.19 o superior; el equipo usa 24):
+
+1. Abre la carpeta del repo.
+2. En la terminal: `npm install` (instala también lo de `app/`) y luego `npm run dev`. Abre http://localhost:5173.
+3. O sin terminal: **F5** ("Rumbo a Marte (Chrome)") arranca el servidor y abre el navegador. En *Terminal → Ejecutar tarea* están "instalar", "correr" y "pruebas".
+
+**En GitHub, sin instalar nada:**
+
+- **Codespaces:** botón verde *Code → Codespaces → Create codespace on main*. Instala todo y abre la app en una pestaña.
+- **GitHub Pages:** una sola vez, *Settings → Pages → Source: GitHub Actions*. Desde entonces cada push a `main` corre las pruebas y publica la app en `https://<usuario>.github.io/<repo>/`.
+
+Otros comandos desde la raíz: `npm test` (18 pruebas), `npm run build`. Detalle de lo que se combinó: `Agents/CAMBIOS.md`.
 
 ---
 

@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Rumbo a Marte: instalar",
+      "type": "shell",
+      "command": "npm install",
+      "problemMatcher": []
+    },
+    {
+      "label": "Rumbo a Marte: correr",
+      "type": "shell",
+      "command": "npm run dev",
+      "isBackground": true,
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": {
+        "owner": "vite",
+        "pattern": { "regexp": "^__nunca__$" },
+        "background": { "activeBegin": true, "beginsPattern": "VITE", "endsPattern": "localhost:" }
+      }
+    },
+    {
+      "label": "Rumbo a Marte: pruebas",
+      "type": "shell",
+      "command": "npm test",
+      "group": "test",
+      "problemMatcher": []
+    }
+  ]
+}

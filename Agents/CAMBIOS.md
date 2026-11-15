@@ -2,7 +2,19 @@
 
 Resumen simple de cada cambio. Hora del Pacífico (PST). Lo más nuevo va arriba.
 
-Cada entrada indica qué agente hizo el cambio. Hasta la entrada de las 17:09, los cambios de hoy los hizo **Claude** (Anthropic): Opus 5.5 hasta las 14:59 y Sonnet 5.5 después. Las entradas de las 17:31 y las 18:04 las hizo **Grok**. La entrada del 2026-11-15 09:16 la hizo **Claude** (Opus 5.5).
+Cada entrada indica qué agente hizo el cambio. Hasta la entrada de las 17:09, los cambios de hoy los hizo **Claude** (Anthropic): Opus 5.5 hasta las 14:59 y Sonnet 5.5 después. Las entradas de las 17:31 y las 18:04 las hizo **Grok**. Las entradas del 2026-11-15 (09:16 y 10:18) las hizo **Claude** (Opus 5.5).
+
+---
+
+## 2026-11-15 10:18 — Correrlo en VS Code, Codespaces y GitHub Pages
+
+**Agente:** Claude (Opus 5.5)
+
+- **`package.json` en la raíz:** `npm install` instala también `app/` y `npm run dev`, `npm test`, `npm run build` funcionan desde la raíz. Los comandos de siempre dentro de `app/` siguen igual.
+- **VS Code:** `.vscode/launch.json` (F5 arranca Vite y abre Chrome) y `.vscode/tasks.json` (instalar, correr, pruebas).
+- **Codespaces:** `.devcontainer/devcontainer.json` con Node 24; instala y arranca solo. `vite.config.js` acepta el dominio `.app.github.dev`.
+- **GitHub Pages:** `.github/workflows/pages.yml` corre las pruebas, compila y publica en cada push a `main`. Hay que activarlo una vez en *Settings → Pages → Source: GitHub Actions*. Secreto opcional `NASA_API_KEY` para DONKI.
+- **Rutas relativas:** `vite.config.js` toma `base` de `BASE_PATH` (Pages sirve en `/<repo>/`); el manifiesto y el service worker usan rutas relativas. Probado sirviendo la compilación en `/Rumbo-a-marte/`: carga el DEM, el service worker y la caminata completa.
 
 ---
 
